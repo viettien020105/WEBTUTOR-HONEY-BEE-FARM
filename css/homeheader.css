@@ -1,0 +1,195 @@
+.container{
+    width: 100%;
+    height: 100%;
+}
+.pano-advert{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+}
+.content-advert{
+    width: 550px;
+    height: 100%;
+    display: flex;
+}
+.logo-advert{
+    width: 62px;
+    height: 100%;
+}
+.pano-advert{
+    background-color: yellow;
+}
+.text-advert{
+    width: 488px;
+    height: 100%;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.box-content-header{
+    width: 1200px;
+    height: 100%;
+    display: flex;
+}
+.nav{
+    width: 42%;
+    height: 100%;
+    display: flex;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 17px;
+}
+.nav1{
+    width: 14%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.nav2{
+    width: 17%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.nav2-box{
+    width: 100%;
+    height: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav3{
+    width: 11%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.nav4{
+    width: 11%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.nav1 p:hover, .nav2:hover, .nav3 p:hover, .nav4 p:hover{
+    color: yellow;
+    cursor: pointer;
+}
+.nav2-text{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.nav2-logo{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.logo-web{
+    width: 16%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.logo-web img{
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+    
+}
+.feature{
+    width: 42%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.box-feature{
+    width: 70%;
+    height: 30%;
+    display: flex;
+
+}
+.box-number{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    font-size: 17px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.box-number-text{
+    color: white;
+}
+.box-number-number{
+    color: yellow;
+}
+.box-account{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 22px;
+    color: white;
+
+}
+.box-search{
+    width: 15%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 22px;
+    color: white;
+}
+.box-cart{
+    width: 15%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 22px;
+    color: white;
+
+}
+
+
+
+
+.slider{
+    width: 100%;
+    height: 655px;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
