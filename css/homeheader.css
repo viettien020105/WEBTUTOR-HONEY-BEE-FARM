@@ -132,7 +132,7 @@
     width: 70%;
     height: 30%;
     display: flex;
-
+    justify-content: space-between;
 }
 .box-number{
     width: 50%;
@@ -150,7 +150,7 @@
     color: yellow;
 }
 .box-account{
-    width: 15%;
+    width: 6%;
     height: 100%;
     display: flex;
     justify-content: end;
@@ -160,9 +160,8 @@
 
 }
 .box-search{
-    width: 15%;
+    width: 6%;
     height: 100%;
-    border: 1px solid black;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -170,9 +169,8 @@
     color: white;
 }
 .box-cart{
-    width: 15%;
+    width: 6%;
     height: 100%;
-    border: 1px solid black;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -181,8 +179,10 @@
 
 }
 
-
-
+.box-account:hover, .box-cart:hover, .box-search:hover{
+    color: yellow;
+    cursor: pointer;
+}
 
 .slider{
     width: 100%;
