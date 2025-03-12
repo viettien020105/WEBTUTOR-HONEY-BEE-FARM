@@ -1,172 +1,330 @@
-.box-product-detail{
+.box-products{
     width: 100%;
-    height: 730px;
+    height: 1900px;
     /* border: 1px solid black; */
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    background-color: rgb(251, 252, 228);
 }
-.box-content{
+.box-title{
     width: 1200px;
-    height: 80%;
+    height: 1%;
+    /* border: 1px solid black; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box-product{
+    width: 1200px;
+    height: 95%;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
+}
+.box-cate{
+    width: 23%;
+    height: 25%;
     /* border: 1px solid black; */
+    margin-top: 20px;
 }
 
-.box-product{
-    width: 55%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.box-info{
-    width: 40%;
-    height: 100%;
-    border: 1px solid black;
-}
-.product{
-    width: 100%;
-    height: 78%;
-    display: flex;
-    justify-content: center;
-}
-.similar-product{
-    width: 100%;
-    height: 15%;
+.title-cate {
+    background: #fff;
+    padding-top: 8px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
+    align-items: start;
 }
-.image{
+
+.title-cate i {
+    transition: transform 0.3s;
+}
+
+.content-cate {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Ẩn danh sách mặc định */
+    border-top: 1px solid #ddd;
+}
+
+.content-cate li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.content-cate li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.content-cate li a:hover {
+    color: orange;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.products{
     width: 75%;
     height: 100%;
     /* border: 1px solid black; */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
 }
-.image img{
-    width: 90%;
-    height: 100%;
+.title-products{
+    width: 100%;
+    height: 3%;
+    /* border: 1px solid black; */
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+
 }
-.p1{
-    width: 14%;
+.title-products-left{
+    width: 20%;
     height: 100%;
     /* border: 1px solid black; */
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.p1 img{
-    width: 100%;
+
+.title-products-right{
+    width: 25%;
     height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    font-family: Arial, sans-serif;
+    position: relative;
 }
 
-
-
-
-
-
-.product-advert{
-    width: 100%;
-    height: 1150px;
-    border: 1px solid black;
+.right1{
+    width: 35%;
+    height: 60%;
+    /* border: 1px solid black; */
     display: flex;
-    justify-content: center;
     align-items: center;
 }
-.box-product-advert{
-    width: 1200px;
+
+
+.right2{
+    width: 60%;
+    height: 26%;
+    font-size: 15px;
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right2 i {
+    margin-left: auto;
+    transition: transform 0.3s;
+}
+
+.dropdown-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+    font-size: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Đặt giá trị cao để hiển thị trên ảnh */
+}
+
+
+.dropdown-menu li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background: #eee;
+}
+
+.show-menu {
+    display: block;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.product{
+    width: 100%;
     height: 85%;
     /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.box-title-hot{
+
+.row{
     width: 100%;
-    height: 28px;
+    height: 23%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+.column{
+    width: 31%;
+    height: 100%;
+    /* border: 1px solid black; */
+    
+}
+.column-top{
+    width: 100%;
+    height: 78%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.column-top img{
+    width: 70%;
+    height: 100%;
+    transition: transform 1s ease;
+    display: block; /* Đảm bảo ảnh không bị ảnh hưởng */
+}
+
+.column-top::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(244, 167, 51, 0.7), rgba(203, 225, 81, 0)); 
+    opacity: 0;
+    transition: opacity 1s ease;
+    border-radius: 7px;
+    z-index: 1;
+}
+
+.column-top:hover::before{
+    opacity: 1;
+}
+
+.column-top:hover img{
+    transform: scale(1.1);
+}
+
+.top-button{
+    bottom: 40px;
+    position: absolute;
+    padding: 13px 17px;
+    font-size: 12px;
+    color: white;
+    background-color: rgb(253, 180, 46); /* Nền trong suốt */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 0; /* Ẩn mặc định */
+    transition: opacity 0.5s ease, transform 0.3s ease;
+    z-index: 2; /* Đảm bảo nút hiển thị trên lớp phủ */
+}
+
+.column-top:hover .top-button{
+    opacity: 1; /* Hiện nút khi hover */
+    transform: scale(1.1);
+}
+
+.top-button:hover{
+    background-color: rgb(58, 57, 57);
+
+}
+
+
+.column-bottom{
+    width: 100%;
+    height: 22%;
+
+}
+
+.name-product{
+    width: 100%;
+    height: 40%;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.price-product{
+    width: 100%;
+    height: 60%;
+
+    display: flex;
+}
+
+.voucher{
+    width: 20%;
+    height: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.products{
-    width: 100%;
-    height: 330px;
-    /* border: 1px solid black; */
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
-}
-.title-similar-product{
-    width: 100%;
-    height: 28px;
-    border: 1px solid black;
-    margin-top: 50px;
 
-}
-.title-make-product{
-    width: 100%;
-    height: 28px;
-    border: 1px solid black;
-    margin-top: 150px;
-}
-.steps{
-    width: 100%;
-    height: 250px;
-    /* border: 1px solid black; */
-    margin-top: 50px;
+.price{
+    width: 50%;
+    height: 100%;
+
+    font-size: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    
 }
-.product-details{
-    width: 23%;
+
+.old-price{
+    width: 30%;
     height: 100%;
-    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: line-through;
 }
-.image-details{
+
+.page{
     width: 100%;
-    height: 80%;
+    height: 4%;
     /* border: 1px solid black; */
+    display: flex;
 }
-.image-details img{
-    width: 100%;
-    height: 100%;
-}
-.content-details{
-    width: 100%;
-    height: 20%;
-    /* border: 1px solid black; */
-}
-.step{
-    width: 23%;
-    height: 100%;
-    border: 1px solid black;
-}
-.box-infor{
-    width: 100%;
-    height: 600px;
+
+.page1, .page2, .page3{
+    width: 30px;
+    height: 30px;
     border: 1px solid black;
     display: flex;
     justify-content: center;
-    
+    align-items: center;
+    border-radius: 5px;
+    margin-left: 10px;
 }
-.infor{
-    width: 1200px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-.title-infor{
-    width: 100%;
-    height: 40px;
-    border: 1px solid black;
-}
-.content-infor{
-    width: 100%;
-    height: 360px;
-    /* border: 1px solid black; */
-    display: flex;
-    justify-content: space-between;
-}
-.infor1{
-    width: 23%;
-    height: 100%;
-    border: 1px solid black;
+
+.page3{
+    font-size: 10px;
 }

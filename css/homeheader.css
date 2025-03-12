@@ -18,7 +18,7 @@
     height: 100%;
 }
 .pano-advert{
-    background-color: yellow;
+    background-color: rgb(253, 180, 46);
 }
 .text-advert{
     width: 488px;
@@ -89,7 +89,7 @@
 
 }
 .nav1 p:hover, .nav2:hover, .nav3 p:hover, .nav4 p:hover{
-    color: yellow;
+    color: rgb(253, 180, 46);
     cursor: pointer;
 }
 .nav2-text{
@@ -147,7 +147,7 @@
     color: white;
 }
 .box-number-number{
-    color: yellow;
+    color: rgb(253, 180, 46);
 }
 .box-account{
     width: 6%;
@@ -180,7 +180,7 @@
 }
 
 .box-account:hover, .box-cart:hover, .box-search:hover{
-    color: yellow;
+    color: rgb(253, 180, 46);
     cursor: pointer;
 }
 

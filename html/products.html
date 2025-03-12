@@ -3,181 +3,344 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/homeheader.css">
+    <link rel="stylesheet" href="/css/products.css">
+    <link rel="stylesheet" href="/css/homefooter.css">
+    <script src="/js/categoryHome.js"></script>
+    <script src="/js/sizeProducts.js"></script>
     <title>Document</title>
     <style>
-        .container{
-            width: 100%;
-            height: 100%;
-        }
-        .pano-advert{
-            width: 100%;
-            height: 48px;
-            border: 1px solid black;
-            display: flex;
-            justify-content: center;
-        }
-        .content-advert{
-            width: 550px;
-            height: 100%;
-            display: flex;
-        }
-        .logo-advert{
-            width: 62px;
-            height: 100%;
-            background-color: yellow;
-        }
-        .text-advert{
-            width: 488px;
-            height: 100%;
-            background-color: rgb(138, 244, 138);
-        }
-        .header{
-            width: 100%;
-            height: 80px;
-            border: 1px solid black;
-            display: flex;
-            justify-content: center;
-        }
-        .box-content-header{
-            width: 1200px;
-            height: 100%;
-            display: flex;
-        }
-        .nav{
-            width: 42%;
-            height: 100%;
-            background-color: aqua;
-        }
-        .logo-web{
-            width: 16%;
-            height: 100%;
-            background-color: beige;
-        }
-        .feature{
-            width: 42%;
-            height: 100%;
-            background-color: aquamarine;
-        }
-        .box-products{
-            width: 100%;
-            height: 1900px;
-            border: 1px solid black;
-            display: flex;
-            justify-content: space-around;
-            flex-direction: column;
-            align-items: center;
-        }
-        .box-title{
-            width: 1200px;
-            height: 2%;
-            border: 1px solid black;
-        }
-        .box-product{
-            width: 1200px;
-            height: 90%;
-            border: 1px solid black;
-            display: flex;
-            justify-content: space-between;
-        }
-        .box-cate{
-            width: 23%;
-            height: 25%;
-            border: 1px solid black;
-        }
-        .products{
-            width: 75%;
-            height: 100%;
-            /* border: 1px solid black; */
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-        }
-        .title-products{
-            width: 100%;
-            height: 3%;
-            border: 1px solid black;
-
-        }
-        .product{
-            width: 100%;
-            height: 85%;
-            /* border: 1px solid black; */
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        .page{
-            width: 100%;
-            height: 4%;
-            border: 1px solid black;
-
-        }
-        .row{
-            width: 100%;
-            height: 23%;
-            /* border: 1px solid black; */
-            display: flex;
-            justify-content: space-between;
-        }
-        .column{
-            width: 31%;
-            height: 100%;
-            border: 1px solid black;
-        }
-        .title-cate{
-            
-        }
+        
+        
     </style>
 </head>
 <body>
     <div class="container">
         <div class="pano-advert">
             <div class="content-advert">
-                <div class="logo-advert">logo</div>
-                <div class="text-advert">content</div>
+                <div class="logo-advert">
+                    <img src="/images/imghome/bee_header.webp" alt="">
+                </div>
+                <div class="text-advert">
+                    <p>MIỄN PHÍ VẬN CHUYỂN TRÊN MỌI ĐƠN HÀNG</p>
+                </div>
             </div>
         </div>
         <div class="header">
             <div class="box-content-header">
-                <div class="nav">nav</div>
-                <div class="logo-web">logo-web</div>
-                <div class="feature">other feature</div>
+                <div class="nav">
+                    <div class="nav1">
+                        <p>Trang chủ</p>
+                    </div>
+                    <div class="nav2">
+                        <div class="nav2-box">
+                            <p>Sản phẩm</p>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+                    <div class="nav3">
+                        <p>Tin tức</p>
+                    </div>
+                    <div class="nav4">
+                        <p>Liên hệ</p>
+                    </div>
+                    <div class="nav1">
+                        <p>Giới thiệu</p>
+                    </div>
+                </div>
+                <div class="logo-web">
+                    <img src="/images/imghome/logo.webp" alt="">
+                </div>
+                <div class="feature">
+                    <div class="box-feature">
+                        <div class="box-number">
+                            <div class="box-number-text"><b>HOTLINE:</b></div>
+                            <div class="box-number-number">0868353074</div>
+                        </div>
+                        <div class="box-account">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="box-search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="box-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="box-products">
             <div class="box-title">Trang Chủ / All Products</div>
             <div class="box-product">
                 <div class="box-cate">
-                    <div class="title-cate"></div>
-                    <div class="content-cate"></div>
+                    <span class="title-cate">
+                        DANH MUC SAN PHAM
+                        <i class="fa-solid fa-angle-up"></i>
+                    </span>
+                    <ul class="content-cate">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Cẩm nang</a></li>
+                    </ul>
                 </div>
                 <div class="products">
-                    <div class="title-products"></div>
-                    <div class="product">
-                        <div class="row">
-                            <div class="column"></div>
-                            <div class="column"></div>
-                            <div class="column"></div>
-                        </div>
-                        <div class="row">
-                            <div class="column"></div>
-                            <div class="column"></div>
-                            <div class="column"></div>
-                        </div>
-                        <div class="row">
-                            <div class="column"></div>
-                            <div class="column"></div>
-                            <div class="column"></div>
-                        </div>
-                        <div class="row">
-                            <div class="column"></div>
-                            <div class="column"></div>
-                            <div class="column"></div>
+                    <div class="title-products">
+                        <div class="title-products-left"><b>Tất cả sản phẩm</b></div>
+                        <div class="title-products-right">
+                            <div class="right1">Sắp xếp:</div>
+                            <div class="right2">
+                                <p class="selected-option">Mặc định</p>
+                                <i class="fa-solid fa-angle-up"></i>
+                                <ul class="dropdown-menu">
+                                    <li data-value="default">Mặc định</li>
+                                    <li data-value="az">A → Z</li>
+                                    <li data-value="za">Z → A</li>
+                                    <li data-value="price-asc">Giá tăng dần</li>
+                                    <li data-value="price-desc">Giá giảm dần</li>
+                                    <li data-value="newest">Hàng mới nhất</li>
+                                    <li data-value="oldest">Hàng cũ nhất</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="page"></div>
+                    <div class="product">
+                        <div class="row">
+                            <div class="column">
+                                <div class="column-top">
+                                    <img src="/images/imgproduct/p1.webp" alt="">
+                                    <button class="top-button">Tùy chọn</button>
+                                </div>
+                                <div class="column-bottom">
+                                    <div class="name-product">Mat hoa ca phe</div>
+                                    <div class="price-product">
+                                        <div class="voucher">-67%</div>
+                                        <div class="price">1.000.000d</div>
+                                        <div class="old-price">1.000.000d</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="column-top">
+                                    <img src="/images/imgproduct/p2.webp" alt="">
+                                    <button class="top-button">Tùy chọn</button>
+                                </div>
+                                <div class="column-bottom">
+                                    <div class="name-product">Mat hoa ca phe</div>
+                                    <div class="price-product">
+                                        <div class="voucher">-67%</div>
+                                        <div class="price">1.000.000d</div>
+                                        <div class="old-price">1.000.000d</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="column-top">
+                                    <img src="/images/imgproduct/p3.webp" alt="">
+                                    <button class="top-button">Tùy chọn</button>
+                                </div>
+                                <div class="column-bottom">
+                                    <div class="name-product">Mat hoa ca phe</div>
+                                    <div class="price-product">
+                                        <div class="voucher">-67%</div>
+                                        <div class="price">1.000.000d</div>
+                                        <div class="old-price">1.000.000d</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <div class="column-top">
+                                    <img src="/images/imgproduct/p4.webp" alt="">
+                                    <button class="top-button">Tùy chọn</button>
+                                </div>
+                                <div class="column-bottom">
+                                    <div class="name-product">Mat hoa ca phe</div>
+                                    <div class="price-product">
+                                        <div class="voucher">-67%</div>
+                                        <div class="price">1.000.000d</div>
+                                        <div class="old-price">1.000.000d</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="column-top">
+                                    <img src="/images/imgproduct/p5.jpg" alt="">
+                                    <button class="top-button">Tùy chọn</button>
+                                </div>
+                                <div class="column-bottom">
+                                    <div class="name-product">Mat hoa ca phe</div>
+                                    <div class="price-product">
+                                        <div class="voucher">-67%</div>
+                                        <div class="price">1.000.000d</div>
+                                        <div class="old-price">1.000.000d</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="column-top">
+                                    <img src="/images/imgproduct/p6.webp" alt="">
+                                    <button class="top-button">Tùy chọn</button>
+                                </div>
+                                <div class="column-bottom">
+                                    <div class="name-product">Mat hoa ca phe</div>
+                                    <div class="price-product">
+                                        <div class="voucher">-67%</div>
+                                        <div class="price">1.000.000d</div>
+                                        <div class="old-price">1.000.000d</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <div class="column-top">
+                                    <img src="/images/imgproduct/p7.webp" alt="">
+                                    <button class="top-button">Tùy chọn</button>
+                                </div>
+                                <div class="column-bottom">
+                                    <div class="name-product">Mat hoa ca phe</div>
+                                    <div class="price-product">
+                                        <div class="voucher">-67%</div>
+                                        <div class="price">1.000.000d</div>
+                                        <div class="old-price">1.000.000d</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="column-top">
+                                    <img src="/images/imgproduct/p8.webp" alt="">
+                                    <button class="top-button">Tùy chọn</button>
+                                </div>
+                                <div class="column-bottom">
+                                    <div class="name-product">Mat hoa ca phe</div>
+                                    <div class="price-product">
+                                        <div class="voucher">-67%</div>
+                                        <div class="price">1.000.000d</div>
+                                        <div class="old-price">1.000.000d</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="column-top">
+                                    <img src="/images/imghome/product9.webp" alt="">
+                                    <button class="top-button">Tùy chọn</button>
+                                </div>
+                                <div class="column-bottom">
+                                    <div class="name-product">Mat hoa ca phe</div>
+                                    <div class="price-product">
+                                        <div class="voucher">-67%</div>
+                                        <div class="price">1.000.000d</div>
+                                        <div class="old-price">1.000.000d</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <div class="column-top">
+                                    <img src="/images/imghome/product8.png" alt="">
+                                    <button class="top-button">Tùy chọn</button>
+                                </div>
+                                <div class="column-bottom">
+                                    <div class="name-product">Mat hoa ca phe</div>
+                                    <div class="price-product">
+                                        <div class="voucher">-67%</div>
+                                        <div class="price">1.000.000d</div>
+                                        <div class="old-price">1.000.000d</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="column-top">
+                                    <img src="/images/imghome/product7.webp" alt="">
+                                    <button class="top-button">Tùy chọn</button>
+                                </div>
+                                <div class="column-bottom">
+                                    <div class="name-product">Mat hoa ca phe</div>
+                                    <div class="price-product">
+                                        <div class="voucher">-67%</div>
+                                        <div class="price">1.000.000d</div>
+                                        <div class="old-price">1.000.000d</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="column-top">
+                                    <img src="/images/imghome/product6.webp" alt="">
+                                    <button class="top-button">Tùy chọn</button>
+                                </div>
+                                <div class="column-bottom">
+                                    <div class="name-product">Mat hoa ca phe</div>
+                                    <div class="price-product">
+                                        <div class="voucher">-67%</div>
+                                        <div class="price">1.000.000d</div>
+                                        <div class="old-price">1.000.000d</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="page1">1</div>
+                        <div class="page2">2</div>
+                        <div class="page3">
+                            <i class="fa-solid fa-angles-right"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="box-footer">
+        <div class="box-content-footer">
+            <div class="content-footer">
+                <div class="content-footer-box1">
+                    <div class="box1-top">
+                        <div class="footer-logo">
+                            <img src="/images/imghome/logo.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="box1-footer">
+                        <div class="box1-footer1">Tầng 6 tòa nhà Ladeco, 266 Đội Cấn, phường Liễu Giai, Hà Nội</div>
+                        <div class="box1-footer2">1800 6750</div>
+                        <div class="box1-footer2">hellocafein@gmail.com</div>
+                        <div class="box1-footer2">Hệ thống chi nhánh</div>
+                    </div>
+                </div>
+                <div class="content-footer-box2">
+                    <div class="box2-top">THÔNG TIN KHÁCH HÀNG</div>
+                    <div class="box2-footer">Trang chủ</div>
+                    <div class="box2-footer">Sản phẩm</div>
+                    <div class="box2-footer">Tin tức</div>
+                    <div class="box2-footer">Liên hệ</div>
+                    <div class="box2-footer">Giới thiệu</div>
+                    <div class="box2-footer">Cẩm mang</div>
+                </div>
+                <div class="content-footer-box3">
+                    <div class="box3-top">CHÍNH SÁCH MUA HÀNG</div>
+                    <div class="box3-footer">Trang chủ</div>
+                    <div class="box3-footer">Sản phẩm</div>
+                    <div class="box3-footer">Tin tức</div>
+                    <div class="box3-footer">Liên hệ</div>
+                    <div class="box3-footer">Giới thiệu</div>
+                    <div class="box3-footer">Cẩm mang</div>
+                </div>
+                <div class="content-footer-box4">
+                    <div class="box4-top">DỊCH VỤ HỔ TRỢ</div>
+                    <div class="photo">
+                        <img src="/images/imghome/photo.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-advert">
+            <p>Bản quyền thuộc về...</p>
         </div>
     </div>
 </body>
